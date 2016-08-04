@@ -52,6 +52,7 @@ p {
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
+
 section {
   padding: 100px 0;
 }
@@ -484,6 +485,10 @@ footer ul.quicklinks {
 .team-member p {
   margin-top: 0;
 }
+.team-member p text-muted {
+  text-align: center;
+}
+
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -583,7 +588,10 @@ footer ul.quicklinks {
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
 }
-.timeline .timeline-body > p,
+.timeline .timeline-body > p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
@@ -592,7 +600,7 @@ footer ul.quicklinks {
     left: 50%;
   }
   .timeline > li {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     min-height: 100px;
   }
   .timeline > li .timeline-panel {
@@ -644,7 +652,7 @@ footer ul.quicklinks {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 20px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -655,7 +663,7 @@ footer ul.quicklinks {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 20px 20px 20px;
   }
 }
 
@@ -690,6 +698,7 @@ section h3.section-subheading {
   font-size: 20px;
   font-family: "Montserrat", "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
+  text-align: center;
   font-style: italic;
   font-weight: 400;
   margin-bottom: 75px;

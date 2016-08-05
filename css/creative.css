@@ -152,7 +152,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/scuba3.png');
+  background-image: url('../img/header.jpg');
   text-align: center;
   color: white;
 }
@@ -434,6 +434,7 @@ ul.social-buttons li a {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
@@ -464,6 +465,11 @@ footer ul.quicklinks {
   text-transform: none;
 }
 
+.col-sm-4 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .team-member {
   text-align: center;
   margin-bottom: 50px;
@@ -474,6 +480,7 @@ footer ul.quicklinks {
 }
 .team-member h4 {
   margin-top: 25px;
+  font-size: 22px;
   margin-bottom: 0;
   text-transform: none;
 }
@@ -483,7 +490,19 @@ footer ul.quicklinks {
 .team-member p text-muted {
   text-align: center;
 }
-
+.position {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.describe {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -495,6 +514,8 @@ footer ul.quicklinks {
   padding: 0;
   position: relative;
 }
+
+
 .timeline:before {
   top: 0;
   bottom: 0;
@@ -539,6 +560,7 @@ footer ul.quicklinks {
 }
 .timeline > li .timeline-image {
   left: 0;
+
   margin-left: 0;
   width: 80px;
   height: 80px;
@@ -614,6 +636,9 @@ footer ul.quicklinks {
     font-size: 13px;
     margin-top: 16px;
     line-height: 18px;
+    font-weight: bold;
+    text-align: center;
+
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;

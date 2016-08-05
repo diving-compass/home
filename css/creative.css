@@ -481,7 +481,7 @@ footer ul.quicklinks {
 .team-member h4 {
   margin-top: 25px;
   font-size: 22px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   text-transform: none;
 }
 .team-member p {

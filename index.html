@@ -95,7 +95,8 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
-                    <p class="text-faded">Coming Soon...</p>
+                    <p class="text">Have you ever been lost, looking for the boat ? You were sure to surface near it but, you were unable to see it. You maybe drifted because of sea current. But how far are you from the boat ? Where do you need to go to find it ? Wouldn't be a nice idea to be able to know where it is before being lost ?</p> 
+                    <p class="text">Our solution indicates you on a digital compass the direction and distance to the boat. With some engineering we are able to process a signal and tell you where the boat is, and how far. It is not finished and functionnal yet, but stay tuned to stay up to date.</p>
                     <!--<a href="#" class="page-scroll btn btn-default btn-xl sr-button">Kickstarter in 2017 ?</a>-->
                 </div>
             </div>
@@ -193,10 +194,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>September 2016</h4>
-                                    <h4 class="subheading">Test of Ultrasonic FSK</h4>
+                                    <h4 class="subheading">Test of Ultrasonic FSK (reported)</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">The PCB will be manufactured mid-September and tests will follow.</p>
+                                    <p class="text-muted">The first version of the PCB has been manufactured mid-September. We faced some issues. Finally, our calculation method seemed impossible to achieve. After some reflexion days, an all new way to achieve it has been found, more precise, easier to set up and much less CPU intensive. With some trigonometry and with storing our values in a table in E2PROM instead of calculate them, it allows us to constantly refresh our GUI and make it smoother. Without a FPU, it is the simplest method to process data quickly.</p>
                                 </div>
                             </div>
                         </li>
@@ -207,18 +208,34 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>October 2016</h4>
-                                    <h4 class="subheading">Test of direction calculation</h4>
+                                    <h4 class="subheading">Test of Ultrasonic FSK</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted"></p>
+                                    <p class="text-muted">Test have been done ! FSK is okay. But another huge problem came to us. The way to get signals before processing them is impossible to achieve because of ambiant noise undersea between 20KHz and 100KHz. Some locations in south of France are polluated by companies that produces noises in the water. After some researches, a new method have been found, nearly insensible to noise. We will not get the different times of reception anymore, but we will work their phases, out of each PLL with a phase comparator. Three phase comparators to determine the differents distances between each mic depending of the angle of arrival of the signal.</p>
                                 </div>
                             </div>
                         </li>
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/12.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>November 2016</h4>
+                                    <h4 class="subheading">Test of mesurement with Phase Detector and 3 microphones</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">As soon as phase detectors will be working, tests with full circuit will begin. Mics + AB Class Amp + PLL + Phase Detector + µC + Screen</p>
+                                </div>
+                            </div>
+                        </li>
+
                         <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <h4>KickStarter
                                     <br>in
-                                    <br>2017 ?</h4>
+                                    <br>2017/2018 ?</h4>
                             </div>
                         </li>
                     </ul>
@@ -352,7 +369,7 @@
                         <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Julien CAMER</h4>
                         <p class="position">Embedded Dev</p>
-                        <p class="describe">Looking for a 6 months internship in the USA</p>
+                        <p class="describe">Looking for a 6 months internship in Nantes, FRANCE</p>
                         <ul class="list-inline social-buttons">
                             <li><p></p><a href="https://www.linkedin.com/in/julien-camer-460301105/" target="_blank" onclick="ga('send','event','Linkedin','Clic','Julien');"><i class="fa fa-linkedin"></i></a>
                             </li>
